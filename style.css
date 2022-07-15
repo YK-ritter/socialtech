@@ -8,6 +8,14 @@ p{
 
 /*PC用のスタイル*/
 @media screen and (min-width: 768px){
+/*PC用カルーセル設定*/
+.carousel{
+    width: 885px;
+    margin-left: 20px;
+}
+.carouselImg{
+    width: 885px;
+}
 /*横幅設定*/
 body{
     max-width: 1080px;
@@ -616,6 +624,14 @@ footer{
 
 /*スマートフォン用のスタイル*/
 @media screen and (max-width: 767px){
+    /*スマホ用カルーセル設定*/
+    .carousel{
+        width: 375px;
+        margin: 0 auto 0 auto;
+    }
+    .carouselImg{
+        width: 375px;
+    }
     body{
         min-width: 375px;
         margin: 0;
@@ -626,8 +642,11 @@ footer{
     }
     /*ハンバーガーメニュー*/
     #menu-sp{
-        float: right;
-        padding: 0;
+        /*float: right;
+        padding: 0;*/
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     /*表示切替*/
     /*初期状態、レイアウトと非表示切り替え*/
